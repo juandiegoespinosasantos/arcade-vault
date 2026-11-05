@@ -12,16 +12,13 @@ Key spec constraints (the codebase is still the bare `create-next-app` scaffold,
 - Planned screens: game library, game detail + leaderboard, player (sandboxed iframe in a CRT bezel), auth, Hall of Fame.
 - Guest scores go to localStorage; authenticated scores are meant to go to a backend (REST or Supabase), not yet chosen.
 
-## Commands
-
-- `npm run dev` — dev server (http://localhost:3000)
-- `npm run build` / `npm start` — production build / serve
-- `npm run lint` — ESLint (flat config, `eslint.config.mjs`)
-- No test runner is configured.
-
 ## Architecture
 
 - Next.js 16.4.5 App Router, React 19, TypeScript, Tailwind CSS v4 (via `@import "tailwindcss"` in [app/globals.css](app/globals.css) and `@theme inline` tokens; no tailwind config file).
 - Routes live in `app/`; path alias `@/*` maps to the repo root.
 - **This Next.js version has breaking changes from what you may know.** Per [AGENTS.md](AGENTS.md), read the relevant guide in `node_modules/next/dist/docs/` (sections `01-app`, `02-pages`, `03-architecture`, `04-community`) before writing Next.js code, and heed deprecation notices.
 - `resources/` (untracked) holds reference templates; `__MACOSX/` is archive junk.
+
+## Skills
+
+- Always use `/frontend-design` skill to design user interfaces.
