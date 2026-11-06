@@ -102,6 +102,15 @@ a { color: inherit; text-decoration: none; }
 /* ===== app frame ===== */
 #root { position: relative; z-index: 2; display: flex; flex-direction: column; min-height: 100%; }
 .av-main { flex: 1; }
+.av-footer {
+  border-top: 1px solid var(--line);
+  padding: 20px 32px;
+  text-align: center;
+  color: var(--ink-faint);
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+}
 
 /* ===== pixel + neon text ===== */
 .pixel { font-family: var(--pixel); letter-spacing: 0.04em; line-height: 1.25; text-transform: uppercase; }
@@ -937,10 +946,6 @@ a { color: inherit; text-decoration: none; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 .slide-in { animation: slideIn 260ms ease-out; }
 @keyframes slideIn { from { opacity: 0; transform: translateX(12px); } to { opacity: 1; transform: none; } }
-
-/* tweaks */
-.tw-section { margin-bottom: 14px; }
-.tw-label { font-family: var(--pixel); font-size: 9px; color: var(--ink-faint); letter-spacing: 0.14em; margin-bottom: 8px; }
 
 /* spinner */
 .spinner {
